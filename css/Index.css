@@ -1,40 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideDown {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-.slide-up {
-    opacity: 0;
-    animation: slideUp 1s forwards;
-}
-
-.slide-down {
-    opacity: 0;
-    animation: slideDown 1s forwards;
-}
-
-.animated {
-    opacity: 1 !important;
-}
-
 body {
     font-family: "Rubik", sans-serif;
     margin: 0;
@@ -72,9 +37,8 @@ header {
 }
 
 .navbar ul li a {
-    padding: 5px 13px;
+    padding: 10px 20px;
     color: white; 
-    font-size: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -87,7 +51,7 @@ button {
     background-color: blue; 
     color: white; 
     border: none;
-    padding: 5px 13px;
+    padding: 10px 20px;
     margin-left: 10px; 
     cursor: pointer;
     transition: all 0.3s ease;
@@ -105,7 +69,7 @@ button.cotiza-aqui {
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -114,7 +78,6 @@ button.cotiza-aqui {
 button.cotiza-aqui:hover {
     background-color: darkgoldenrod;
 }
-
 a.enlace {
     text-decoration: none;
     color: inherit;
@@ -128,7 +91,7 @@ a.enlace.empresa {
     display: inline-block;
     padding: 5px 10px; 
     border-radius: 5px; 
-    font-size: 18px;
+    font-size: 22px;
     animation: fadeIn 2s ease-in-out; 
     white-space: nowrap; 
     padding-left: 35px;
@@ -137,10 +100,11 @@ a.enlace.empresa {
 a.enlace.empresa:hover {
     color: white; 
 }
+
 .banner {
     position: relative;
     min-height: 100vh;
-    background-image: url(Seguridad_3.jpg);
+    background-image: url('Img/Seguridad_3.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -171,14 +135,15 @@ a.enlace.empresa:hover {
 
 .banner .content-banner p {
     text-align: left;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
 }
 
 .banner .content-banner h2 {
-    font-size: 33px;
+    font-size: 3em;
     margin: 10px 0 0;
 }
+
 
 .quienes-somos {
     display: flex;
@@ -192,23 +157,22 @@ a.enlace.empresa:hover {
 
 .container-quienes-somos {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: space-between;
     max-width: 1200px; 
     margin: 0 auto;
-    text-align: left; 
 }
 
 .imagen-quienes-somos {
-    flex: 0 0 auto; 
-    max-width: 45%; 
+    flex: 1;
+    max-width: 50%; 
     margin-right: 20px; 
     border-radius: 25px; 
 }
 
 .texto-quienes-somos {
-    flex: 0.7; 
-    max-width: 100%; 
+    flex: 1;
+    max-width: 50%; 
 }
 
 .texto-quienes-somos h2 {
@@ -217,11 +181,8 @@ a.enlace.empresa:hover {
 }
 
 .texto-quienes-somos p {
-    font-size: 16px; 
-}
-
-.highlight {
-    color: darkgoldenrod; 
+    font-size: 18px; 
+    line-height: 1.6; 
 }
 
 .highlight {
@@ -268,7 +229,7 @@ a.enlace.empresa:hover {
     width: 80%;
     text-align: center;
     color: white;
-    font-size: 1.6em; 
+    font-size: 2em; 
     z-index: 2; 
     margin-bottom: 10px;
 }
@@ -300,9 +261,9 @@ a.enlace.empresa:hover {
 
 .vision p, .mision p {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 
@@ -410,18 +371,18 @@ a.enlace.empresa:hover {
 
 .cotizaciones .content {
     text-align: left; 
-    max-width: 1200px; 
+    max-width: 750px; 
     padding-left: 150px;
 }
 
 .cotizaciones h2 {
-    font-size: 28px; 
+    font-size: 36px; 
     color: #fff; 
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 .cotizaciones p {
-    font-size: 15px; 
+    font-size: 18px; 
     color: #fff; 
     line-height: 1.6; 
     margin: 0 auto 30px auto;
@@ -429,7 +390,7 @@ a.enlace.empresa:hover {
 
 .cotizaciones .button-container {
     text-align: right; 
-    padding-right: 210px;
+    padding-right: 300px;
 }
 
 .cotizaciones .button-container button {
@@ -437,12 +398,10 @@ a.enlace.empresa:hover {
     font-family: "Rubik", sans-serif; 
     color: white; 
     padding: 15px 30px; 
-    font-size: 17px;
+    font-size: 22px;
     border: none; 
     border-radius: 25px; 
     cursor: pointer; 
-    display: inline-block;
-    white-space: nowrap;
 }
 
 .cotizaciones .button-container button:hover {
@@ -479,18 +438,166 @@ footer .footer-content a:hover {
     text-decoration: underline; 
 }
 
-
-
-
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
     }
 
     .navbar ul {
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p {
+        font-size: 1.5em;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 2em;
+    }
+
+    .quienes-somos {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .vision-mision {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+        align-items: flex-start; 
+        text-align: center;
+    }
+
+    .vision,
+    .mision {
+        flex: 0 1 48%; 
+        margin: 10px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .experiencia {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
 
     .navbar ul li {
@@ -498,26 +605,432 @@ footer .footer-content a:hover {
     }
 
     .banner {
-        padding: 50px 0;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 2.2em;
+        margin: 20px 0;
+    }
+
+    .quienes-somos {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 90%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .vision-mision {
+        padding: 30px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start; 
+        text-align: center;
+    }
+
+    .vision,
+    .mision {
+        flex: 0 1 45%; 
+        margin: 20px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 2.2em;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-category {
+        width: 90%;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .experiencia {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 20px auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    .banner {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .banner .content-banner p {
         font-size: 1.2em;
+        margin: 15px 0;
     }
 
     .banner .content-banner h2 {
-        font-size: 2em;
+        font-size: 1.6em;
+        margin: 15px 0;
     }
 
-    .Quiénes-Somos {
-        padding: 30px 10px;
+    .quienes-somos {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .Quiénes-Somos h2 {
-        font-size: 1.5em;
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .Quiénes-Somos p {
-        font-size: 1em;
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 95%;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .vision-mision {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vision,
+    .mision {
+        flex: 0 1 90%; 
+        margin: 10px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 1.8em;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-category {
+        width: 95%;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .experiencia {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 1.6em;
+        margin: 15px 0;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 15px auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center;
     }
 }
+
+
+
+@media (max-width: 250px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .banner {
+        padding: 20px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 1.4em;
+        margin: 10px 0;
+    }
+
+    .quienes-somos {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .vision-mision {
+        padding: 15px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vision,
+    .mision {
+        flex: 0 1 100%; 
+        margin: 5px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header-text {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 1.4em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px auto;
+    }
+
+    .experiencia {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 1.4em;
+        margin: 10px 0;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 10px auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
