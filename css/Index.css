@@ -438,302 +438,17 @@ footer .footer-content a:hover {
     text-decoration: underline; 
 }
 
-@media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .navbar ul li {
-        margin: 5px 0;
-    }
-
-    .banner {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .banner .content-banner {
-        padding-left: 0;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .banner .content-banner p {
-        font-size: 1.5em;
-    }
-
-    .banner .content-banner h2 {
-        font-size: 2em;
-    }
-
-    .quienes-somos {
-        padding: 20px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container-quienes-somos {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .imagen-quienes-somos,
-    .texto-quienes-somos {
-        max-width: 100%;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .vision-mision {
-        padding: 20px;
-        height: auto;
-        text-align: center;
-    }
-
-    .container-vision-mision {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        gap: 20px;
-        padding: 10px;
-        justify-content: center;
-        align-items: flex-start; 
-        text-align: center;
-    }
-
-    .vision,
-    .mision {
-        flex: 0 1 48%; 
-        margin: 10px 0;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .header-text {
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .Comentarios-Clientes .heading-1 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .container-Comentarios-Clientes {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .card-category {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .experiencia {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .experiencia h2 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .cotizaciones {
-        flex-direction: column;
-        padding: 20px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .cotizaciones .content,
-    .cotizaciones .button-container {
-        max-width: 100%;
-        padding-left: 0;
-        text-align: center;
-        padding-right: 0;
-        margin: 0 auto;
-    }
-
-    .cotizaciones .button-container button {
-        width: 100%;
-        padding: 10px 20px;
-        font-size: 1.2em;
-    }
-
-    footer {
-        padding: 20px;
-        text-align: center;
-    }
-}
 
 
 
 @media (max-width: 900px) {
-    header {
+    body {
+        font-size: 16px; 
+        justify-content: column;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
-
-    .banner {
-        padding: 40px 0;
-        text-align: center;
-    }
-
-    .banner .content-banner {
-        padding-left: 0;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .banner .content-banner p {
-        font-size: 1.5em;
-        margin: 20px 0;
-    }
-
-    .banner .content-banner h2 {
-        font-size: 2.2em;
-        margin: 20px 0;
-    }
-
-    .quienes-somos {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container-quienes-somos {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .imagen-quienes-somos,
-    .texto-quienes-somos {
-        max-width: 90%;
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .vision-mision {
-        padding: 30px;
-        height: auto;
-        text-align: center;
-    }
-
-    .container-vision-mision {
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        gap: 20px;
-        padding: 20px;
-        justify-content: center;
-        align-items: flex-start; 
-        text-align: center;
-    }
-
-    .vision,
-    .mision {
-        flex: 0 1 45%; 
-        margin: 20px 0;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .header-text {
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
-        margin: 20px auto;
-    }
-
-    .Comentarios-Clientes .heading-1 {
-        font-size: 2.2em;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .container-Comentarios-Clientes {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .card-category {
-        width: 90%;
-        max-width: 90%;
-        margin: 10px auto;
-    }
-
-    .experiencia {
-        padding: 30px;
-        text-align: center;
-    }
-
-    .experiencia h2 {
-        font-size: 2em;
-        margin: 20px 0;
-    }
-
-    .cotizaciones {
-        flex-direction: column;
-        padding: 30px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .cotizaciones .content,
-    .cotizaciones .button-container {
-        max-width: 100%;
-        padding-left: 0;
-        text-align: center;
-        padding-right: 0;
-        margin: 20px auto;
-    }
-
-    .cotizaciones .button-container button {
-        width: 100%;
-        padding: 15px 20px;
-        font-size: 1.5em;
-    }
-
-    footer {
-        padding: 20px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 500px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -755,6 +470,7 @@ footer .footer-content a:hover {
     .banner {
         padding: 30px 0;
         text-align: center;
+        height: auto;
     }
 
     .banner .content-banner {
@@ -765,16 +481,16 @@ footer .footer-content a:hover {
 
     .banner .content-banner p {
         font-size: 1.2em;
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     .banner .content-banner h2 {
-        font-size: 1.6em;
-        margin: 15px 0;
+        font-size: 2em;
+        margin: 10px 0;
     }
 
     .quienes-somos {
-        padding: 20px;
+        padding: 30px;
         flex-direction: column;
         text-align: center;
     }
@@ -788,9 +504,17 @@ footer .footer-content a:hover {
 
     .imagen-quienes-somos,
     .texto-quienes-somos {
-        max-width: 95%;
+        max-width: 100%;
         margin: 15px 0;
         text-align: center;
+    }
+
+    .texto-quienes-somos h2 {
+        font-size: 1.8em;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 1.2em;
     }
 
     .vision-mision {
@@ -800,9 +524,8 @@ footer .footer-content a:hover {
     }
 
     .container-vision-mision {
-        flex-direction: column; 
-        gap: 20px;
-        padding: 10px;
+        flex-direction: column;
+        padding: 100px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -810,17 +533,20 @@ footer .footer-content a:hover {
 
     .vision,
     .mision {
-        flex: 0 1 90%; 
-        margin: 10px 0;
+       flex-direction: column;
+       display: flex;
+       justify-content:center;
         box-sizing: border-box;
         text-align: center;
+        padding: 1px;
+        padding-top: 10px;
     }
 
     .header-text {
-        font-size: 1.2em;
+        font-size: 1.5em;
         width: 100%;
         text-align: center;
-        margin: 10px auto;
+        margin: 15px auto;
     }
 
     .Comentarios-Clientes .heading-1 {
@@ -831,30 +557,30 @@ footer .footer-content a:hover {
 
     .container-Comentarios-Clientes {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         text-align: center;
         margin: 0 auto;
     }
 
     .card-category {
-        width: 95%;
-        max-width: 95%;
-        margin: 10px auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px auto;
     }
 
     .experiencia {
-        padding: 20px;
+        padding: 30px;
         text-align: center;
     }
 
     .experiencia h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
         margin: 15px 0;
     }
 
     .cotizaciones {
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
         align-items: center;
         text-align: center;
     }
@@ -870,21 +596,32 @@ footer .footer-content a:hover {
 
     .cotizaciones .button-container button {
         width: 100%;
-        padding: 10px 15px;
+        padding: 12px;
         font-size: 1.2em;
     }
 
     footer {
-        padding: 15px;
+        padding: 30px;
         text-align: center;
+    }
+
+    footer .footer-content h6 {
+        font-size: 16px;
+    }
+
+    footer .footer-content a {
+        font-size: 16px;
     }
 }
 
 
 
-@media (max-width: 250px) {
+@media (max-width: 500px) {
     body {
         font-size: 14px; 
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
     }
 
     header {
@@ -902,7 +639,7 @@ footer .footer-content a:hover {
     }
 
     .navbar ul li {
-        margin: 5px 0;
+        margin: 6px 0;
     }
 
     .banner {
@@ -919,16 +656,16 @@ footer .footer-content a:hover {
 
     .banner .content-banner p {
         font-size: 1em;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .banner .content-banner h2 {
-        font-size: 1.4em;
-        margin: 10px 0;
+        font-size: 1.5em;
+        margin: 5px 0;
     }
 
     .quienes-somos {
-        padding: 15px;
+        padding: 20px;
         flex-direction: column;
         text-align: center;
     }
@@ -947,16 +684,201 @@ footer .footer-content a:hover {
         text-align: center;
     }
 
+    .texto-quienes-somos h2 {
+        font-size: 1.5em;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 1em;
+    }
+
     .vision-mision {
-        padding: 15px;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .container-vision-mision {
+        flex-direction: column;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .vision,
+    .mision {
+       flex-direction: column;
+       display: flex;
+       justify-content:center;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .header-text {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        
+    }
+
+    .card-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .experiencia {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .footer-content h6 {
+        font-size: 10px;
+    }
+
+    footer .footer-content a {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 250px) {
+    body {
+        font-size: 15px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .navbar ul li {
+        margin: 4px 0;
+    }
+
+    .banner {
+        padding: 10px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+
+    .quienes-somos {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .texto-quienes-somos h2 {
+        font-size: 1.2em;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 0.9em;
+    }
+
+    .vision-mision {
+        padding: 20px;
         height: auto;
         text-align: center;
     }
 
     .container-vision-mision {
-        flex-direction: column; 
-        gap: 10px;
-        padding: 10px;
+        flex-direction: column;
+        padding: 100px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -964,28 +886,30 @@ footer .footer-content a:hover {
 
     .vision,
     .mision {
-        flex: 0 1 100%; 
-        margin: 5px 0;
+       flex-direction: column;
+       display: flex;
+       justify-content:column;
         box-sizing: border-box;
         text-align: center;
+        padding: 1px;
+        padding-top: 10px;
     }
-
     .header-text {
-        font-size: 1em;
+        font-size: 0.9em;
         width: 100%;
         text-align: center;
         margin: 5px auto;
     }
 
     .Comentarios-Clientes .heading-1 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         text-align: center;
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
     .container-Comentarios-Clientes {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         text-align: center;
         margin: 0 auto;
     }
@@ -997,18 +921,18 @@ footer .footer-content a:hover {
     }
 
     .experiencia {
-        padding: 15px;
+        padding: 10px;
         text-align: center;
     }
 
     .experiencia h2 {
-        font-size: 1.4em;
-        margin: 10px 0;
+        font-size: 1.2em;
+        margin: 8px 0;
     }
 
     .cotizaciones {
         flex-direction: column;
-        padding: 15px;
+        padding: 10px;
         align-items: center;
         text-align: center;
     }
@@ -1019,7 +943,183 @@ footer .footer-content a:hover {
         padding-left: 0;
         text-align: center;
         padding-right: 0;
+        margin: 8px auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 8px;
+        font-size: 10px;
+        align-items: center;
+    }
+
+    footer {
+        padding: 8px;
+        text-align: center;
+    }
+
+    footer .footer-content h6 {
+        font-size: 12px;
+    }
+
+    footer .footer-content a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        font-size: 14px; 
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 6px 0;
+    }
+
+    .banner {
+        padding: 20px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    .quienes-somos {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .texto-quienes-somos h2 {
+        font-size: 1.5em;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 1em;
+    }
+
+    .vision-mision {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: column;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .vision,
+    .mision {
+       flex-direction: column;
+       display: flex;
+       justify-content:center;
+        text-align: center;
+        padding: 1px;
+        font-size: 5px;
+    }
+
+    .header-text {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
         margin: 10px auto;
+    }
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        
+    }
+
+    .card-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .experiencia {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .experiencia h2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 10px auto;
+        font-size: 15px;
     }
 
     .cotizaciones .button-container button {
@@ -1029,8 +1129,15 @@ footer .footer-content a:hover {
     }
 
     footer {
-        padding: 10px;
+        padding: 20px;
         text-align: center;
     }
-}
 
+    footer .footer-content h6 {
+        font-size: 10px;
+    }
+
+    footer .footer-content a {
+        font-size: 14px;
+    }
+}
