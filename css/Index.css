@@ -443,17 +443,19 @@ footer .footer-content a:hover {
 
 @media (max-width: 900px) {
     body {
+        width: 100%;
         font-size: 16px; 
         justify-content: column;
         display: flex;
         flex-direction: column;
+        padding: 100%;
     }
 
     header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        padding: 15%;
         text-align: center;
     }
 
@@ -1139,5 +1141,150 @@ footer .footer-content a:hover {
 
     footer .footer-content a {
         font-size: 14px;
+    }
+}
+
+/* Estilos generales */
+html, body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para pantallas hasta 250px */
+@media (max-width: 250px) {
+    body {
+        font-size: 12px; /* Reduce el tamaño de fuente para pantallas muy pequeñas */
+    }
+
+    .banner .content-banner {
+        padding: 0 5px; /* Reduce el padding */
+    }
+
+    .banner .content-banner p {
+        font-size: 1em; /* Ajusta el tamaño de fuente */
+    }
+
+    .banner .content-banner h2 {
+        font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    }
+
+    .container-quienes-somos {
+        padding: 5px; /* Reduce el padding */
+        flex-direction: column;
+    }
+
+    .imagen-quienes-somos, .texto-quienes-somos {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0; /* Reduce el margen */
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .footer-content p {
+        font-size: 0.9em; /* Ajusta el tamaño de fuente en el footer */
+    }
+}
+
+/* Estilos para pantallas hasta 500px */
+@media (max-width: 500px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente */
+    }
+
+    .banner .content-banner {
+        padding: 0 10px; /* Ajusta el padding */
+    }
+
+    .banner .content-banner p {
+        font-size: 1.2em; /* Ajusta el tamaño de fuente */
+    }
+
+    .banner .content-banner h2 {
+        font-size: 2em; /* Ajusta el tamaño de fuente */
+    }
+
+    .container-quienes-somos {
+        padding: 10px; /* Ajusta el padding */
+        flex-direction: column;
+    }
+
+    .imagen-quienes-somos, .texto-quienes-somos {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0; /* Ajusta el margen */
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .footer-content p {
+        font-size: 1em; /* Ajusta el tamaño de fuente en el footer */
+    }
+}
+
+/* Estilos para pantallas hasta 900px */
+@media (max-width: 900px) {
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente */
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Ajusta el margen */
+    }
+
+    .banner {
+        padding: 50px 10px; /* Ajusta el padding */
+    }
+
+    .banner .content-banner {
+        padding: 0 20px; /* Ajusta el padding */
+    }
+
+    .banner .content-banner p {
+        font-size: 1.5em; /* Ajusta el tamaño de fuente */
+    }
+
+    .banner .content-banner h2 {
+        font-size: 2.5em; /* Ajusta el tamaño de fuente */
+    }
+
+    .container-quienes-somos {
+        padding: 15px; /* Ajusta el padding */
+        flex-direction: column;
+    }
+
+    .imagen-quienes-somos, .texto-quienes-somos {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0; /* Ajusta el margen */
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2em;
+    }
+
+    .footer-content p {
+        font-size: 1.2em; /* Ajusta el tamaño de fuente en el footer */
     }
 }
