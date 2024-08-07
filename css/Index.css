@@ -139,7 +139,7 @@ a.enlace.empresa:hover {
 .banner {
     position: relative;
     min-height: 100vh;
-    background-image: url('Img/Seguridad_3.jpg');
+    background-image: url('Seguridad_3.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
