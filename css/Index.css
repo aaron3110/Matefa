@@ -553,18 +553,23 @@ footer .footer-content a:hover {
         .header-text h1{
             text-align: center;
             padding: 1em;
-            padding-right: 1.5em;
+            padding-right: 2em;
         }
 
         .content-box h2{
             text-align: center;
             align-items: center;
+            padding-right: 2em;
         }
 
-        .content-box p{
+        .content-box p {
             text-align: center;
-            align-items: center;
+            padding-right: 2.5em;
         }
+
+            .content-banner h2{
+                align-items: center;
+            }
     
         header {
             flex-direction: row; 
