@@ -645,26 +645,6 @@ footer .footer-content a:hover {
         align-items: center;
         text-align: center;
     }
-    .header-text h1{
-        text-align: center;
-        padding: 1em;
-        padding-right: 2em;
-    }
-
-    .content-box h2{
-        text-align: center;
-        align-items: center;
-        padding-right: 2em;
-    }
-
-    .content-box p {
-        text-align: center;
-        padding-right: 2.5em;
-    }
-
-    .content-banner h2{
-            align-items: center;
-        }
 
     .vision,
     .mision {
