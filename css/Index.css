@@ -548,6 +548,23 @@ footer .footer-content a:hover {
             flex-direction: column;
             padding: 100%;
         }
+
+
+        .header-text h1{
+            text-align: center;
+            padding: 1em;
+            padding-right: 1.5em;
+        }
+
+        .content-box h2{
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-box p{
+            text-align: center;
+            align-items: center;
+        }
     
         header {
             flex-direction: row; 
