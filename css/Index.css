@@ -537,9 +537,9 @@ footer .footer-content a:hover {
         display: none;
     }
 }
-
+    
 @media (max-width: 768px) {
-    @media (max-width: 768px) {
+    
         body {
             width: 100%;
             font-size: 16px; 
@@ -547,6 +547,12 @@ footer .footer-content a:hover {
             display: flex;
             flex-direction: column;
             padding: 100%;
+        }
+
+        .banner .content-banner p{
+            align-items: center;
+            text-align: center;
+            padding: 1px;
         }
 
 
@@ -567,9 +573,10 @@ footer .footer-content a:hover {
             padding-right: 2.5em;
         }
 
-            .content-banner h2{
-                align-items: center;
-            }
+        .content-banner h2{
+            align-items: center;
+            
+        }
     
         header {
             flex-direction: row; 
