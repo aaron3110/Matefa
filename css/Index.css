@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.slide-up {
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.slide-down {
+    opacity: 0;
+    animation: slideDown 1s forwards;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    color: white;
+}
+
+header {
+    padding: 32px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    z-index: 10;
+}
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px; 
+}
+
+.navbar ul li a {
+    padding: 5px 13px;
+    color: white; 
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: darkgoldenrod;
+}
+
+button {
+    background-color: darkblue; 
+    color: white; 
+    border: none;
+    padding: 5px 13px;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgoldenrod; 
+}
+
+button.cotiza-aqui {
+    font-family: "Rubik", sans-serif;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cotiza-aqui:hover {
+    background-color: darkgoldenrod;
+}
+a.enlace {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+a.enlace.empresa {
+    color: white; 
+    display: inline-block;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 18px;
+    animation: fadeIn 2s ease-in-out; 
+    white-space: nowrap; 
+    padding-left: 35px;
+}
+
+a.enlace.empresa:hover {
+    color: white; 
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: none; 
+    flex-direction: column;
+    padding: 20px;
+}
+
+.side-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu-list li {
+    margin: 10px 0;
+}
+
+.side-menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu.open {
+    display: flex;
+    left: 0; 
+}
+
+.mobile-nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('Seguridad_3.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    color: white; 
+    background-attachment: fixed; 
+    margin-top: -100px;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    background-attachment: fixed; 
+}
+
+.banner .content-banner {
+    position: relative; 
+    z-index: 2; 
+    text-align: left; 
+    padding-left: 150px;
+}
+
+.banner .content-banner p {
+    text-align: left;
+    font-size: 22px;
+    margin: 0;
+    background-attachment: fixed; 
+}
+
+.banner .content-banner h2 {
+    font-size: 35px;
+    margin: 10px 0 0;
+    background-attachment: fixed; 
+}
+
+
+.quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 50px 20px; 
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.container-quienes-somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.imagen-quienes-somos {
+    flex: 1;
+    max-width: 50%; 
+    margin-right: 20px; 
+    border-radius: 25px; 
+    background-attachment: fixed; 
+}
+
+.texto-quienes-somos {
+    flex: 1;
+    max-width: 50%; 
+}
+
+.texto-quienes-somos h2 {
+    font-size: 34px; 
+    margin-bottom: 20px; 
+}
+
+.texto-quienes-somos p {
+    font-size: 19px; 
+    line-height: 1.6; 
+}
+
+.highlight {
+    color: darkgoldenrod; 
+}
+
+.vision-mision {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed; 
+}
+
+
+.overlay {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    background-attachment: fixed; 
+}
+
+.header-text {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: white;
+    background-attachment: fixed; 
+}
+
+.container-vision-mision-principios-valores {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.content-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.content-box > .group {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content-box > .group.active {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.row > div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+.heading-1 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.section-divider {
+    border: 0;
+    height: 4px;
+    background: darkgoldenrod;
+    width: 10%; 
+    margin: 10px auto; 
+}
+.Comentarios-Clientes {
+    padding: 150px 30px;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 40px; 
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.container-Comentarios-Clientes {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-category {
+    background: #fff; 
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: calc(33.333% - 40px); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-category h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-category p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.card-category .client-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-category .client-position {
+    font-size: 14px;
+    color: #999;
+}
+
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 50px 20px; 
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-experiencia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.texto-experiencia {
+    flex: 1;
+    max-width: 50%; 
+    margin-right: 20px; 
+}
+
+.imagen-experiencia {
+    flex: 1;
+    max-width: 50%; 
+    margin-left: 10px; 
+    border-radius: 25px; 
+    background-attachment: fixed; 
+}
+
+.texto-experiencia h2 {
+    font-size: 34px; 
+    margin-bottom: 20px; 
+}
+
+.texto-experiencia p {
+    font-size: 19px; 
+    line-height: 1.6; 
+}
+
+.cotizaciones {
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;    
+}
+
+
+.cotizaciones .content {
+    text-align: left; 
+    max-width: 750px; 
+    padding-left: 100px;
+}
+
+.cotizaciones h2 {
+    font-size: 36px; 
+    color: #fff; 
+    margin-bottom: 20px; 
+}
+
+.cotizaciones p {
+    font-size: 18px; 
+    color: #fff; 
+    line-height: 1.6; 
+    margin: 0 auto 30px auto;
+}
+
+.cotizaciones .button-container {
+    text-align: right; 
+    padding-right: 150px;
+}
+
+.cotizaciones .button-container button {
+    background-color: darkblue; 
+    font-family: "Rubik", sans-serif; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 20px;
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cotizaciones .button-container button:hover {
+    background-color: darkgoldenrod;
+    color: white; 
+}
+
+
+footer {
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 24px 20px; 
+    text-align: center;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+footer .footer-content h6 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer .footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+    .container-navbar {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 145px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+        body {
+            width: 100%;
+            font-size: 16px; 
+            justify-content: column;
+            display: flex;
+            flex-direction: column;
+            padding: 100%;
+        }
+    
+        header {
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px; 
+            text-align: left; 
+        }
+    
+        .navbar ul {
+            flex-direction: column;
+        }
+    
+        .mobile-nav .enlace.empresa {
+            margin-left: 10px;
+            margin-top: 15px; 
+            color: white;
+            font-size: 24px;
+            cursor: pointer; 
+        }
+    
+        .mobile-nav .mobile-nav-toggle {
+            margin-right: 10px;
+            margin-top: 10px; 
+            color: white; 
+            font-size: 24px;
+            cursor: pointer; 
+        }
+
+    .banner {
+        padding: 30px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .banner .content-banner {
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .content-banner p{
+            align-items: center;
+            text-align: center;
+            padding: 1px;
+            
+        }
+    .banner .content-banner p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .banner .content-banner h2 {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .quienes-somos {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-quienes-somos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-quienes-somos,
+    .texto-quienes-somos {
+        max-width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .texto-quienes-somos h2 {
+        font-size: 1.8em;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 1.2em;
+    }
+
+    .vision-mision {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-vision-mision {
+        flex-direction: column;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vision,
+    .mision {
+       flex-direction: column;
+       display: flex;
+       justify-content:center;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 1px;
+        padding-top: 10px;
+    }
+
+    .header-text {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    
+
+    .Comentarios-Clientes .heading-1 {
+        font-size: 1.8em;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .container-Comentarios-Clientes {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .card-category {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px auto;
+    }
+
+   
+    .experiencia {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-experiencia {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-experiencia,
+    .texto-experiencia {
+        max-width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .texto-experiencia h2 {
+        font-size: 1.8em;
+    }
+
+    .texto-experiencia p {
+        font-size: 1.2em;
+    }
+
+    .cotizaciones {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cotizaciones .content,
+    .cotizaciones .button-container {
+        max-width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding-right: 0;
+        margin: 15px auto;
+    }
+
+    .cotizaciones .button-container button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 30px;
+        text-align: center;
+    }
+
+    footer .footer-content h6 {
+        font-size: 16px;
+    }
+
+    footer .footer-content a {
+        font-size: 16px;
+    }
+
+html, body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+}
