@@ -642,7 +642,14 @@ footer .footer-content a:hover {
             font-size: 24px;
             cursor: pointer; 
         }
-
+        .logo {
+            top: 21px;
+            left: 1px;
+        }
+    
+        .logo-empresa {
+            max-width: 150px;
+        }
     .banner {
         padding: 30px 0;
         text-align: center;
