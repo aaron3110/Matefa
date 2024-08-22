@@ -342,7 +342,14 @@ footer .footer-content a:hover {
             padding: 25px; 
             text-align: left; 
         }
+      .logo {
+            top: 20px;
+            left: 1px;
+        }
     
+        .logo-empresa {
+            max-width: 150px; 
+        }
         .navbar ul {
             flex-direction: column;
         }
