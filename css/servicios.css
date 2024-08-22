@@ -259,13 +259,11 @@ a.enlace.empresa:hover {
     align-items: center;
     flex-direction: column;
     will-change: transform, opacity;
-    background-color: rgba(255, 255, 255, 0.1); 
 }
 
 .imagen-port:hover .hover-galery {
     transform: scale(1);
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro al hacer hover */
 }
 
 .hover-galery img {
