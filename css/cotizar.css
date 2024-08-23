@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+
+.slide-down {
+    animation: slideDown 1s forwards;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    color: white;
+}
+
+header {
+    background-color: black; 
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px; 
+}
+
+.navbar ul li a {
+    padding: 5px 13px;
+    color: white; 
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: darkgoldenrod;
+}
+
+button {
+    background-color: blue; 
+    color: white; 
+    border: none;
+    padding: 5px 13px;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgoldenrod; 
+}
+
+button.cotiza-aqui {
+    font-family: "Rubik", sans-serif;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 11px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cotiza-aqui:hover {
+    background-color: darkgoldenrod;
+}
+a.enlace {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+a.enlace.empresa {
+    color: white; 
+    display: inline-block;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 14px;
+    animation: fadeIn 2s ease-in-out; 
+    white-space: nowrap; 
+    padding-left: 35px;
+}
+
+a.enlace.empresa:hover {
+    color: white; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 340px;
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 35px;
+    text-align: center;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: hsl(0, 0%, 96%);
+    border: 2px solid goldenrod;
+    color: black;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.form-txt {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: goldenrod;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: goldenrod;
+    border: 0;
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.507);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 30px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 40px 20px; 
+    text-align: center;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+footer .footer-content h6 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer .footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline; 
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto fuera de la vista */
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    padding: 20px;
+}
+
+.side-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu-list li {
+    margin: 10px 0;
+}
+
+.side-menu-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-menu.open {
+    display: flex; /* Mostrar el menú */
+    left: 0; /* Muestra el menú */
+}
+
+.mobile-nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container-navbar {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 145px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: "Rubik", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black; 
+        color: white;
+    }
+
+    header {
+        background-color: black; 
+        padding: 10px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .mobile-nav .enlace.empresa {
+        margin-left: 10px;
+        margin-top: 15px; /* Baja el nombre de la empresa */
+        color: white; /* Color del texto */
+        font-size: 24px; /* Tamaño de la fuente */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
+    }
+
+    .mobile-nav .mobile-nav-toggle {
+        margin-right: 10px;
+        margin-top: 5px; /* Baja el botón de navegación */
+        color: white; /* Color del texto */
+        font-size: 24px; /* Tamaño de la fuente */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+    .form {
+        padding: 50px 30px;
+    }
+    input {
+        padding: 15px;
+    }
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+footer .footer-content h6 {
+    font-size: 16px;
+}
+
+footer .footer-content a {
+    font-size: 16px;
+}
+
+
+html, body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    margin: 0;
+    padding: 0;
+}
+}
