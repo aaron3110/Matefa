@@ -11,6 +11,14 @@
     to { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes slideIn {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 0;
+    }
+}
 
 .slide-up {
     opacity: 0;
@@ -177,6 +185,8 @@ a.enlace.empresa:hover {
 .side-menu.open {
     display: flex; 
     left: 0; 
+    transition: left 0.3s ease;
+    animation: slideIn 0.3s forwards;
 }
 
 .mobile-nav-toggle {
