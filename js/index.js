@@ -43,12 +43,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const sideMenu = document.querySelector(".side-menu");
 
     mobileNavToggle.addEventListener("click", function() {
-        sideMenu.classList.toggle("open");
+        if (sideMenu.classList.contains('open')) {
+            sideMenu.classList.remove('open');
+            sideMenu.classList.add('close');
+        } else {
+            sideMenu.classList.remove('close');
+            sideMenu.classList.add('open');
+            sideMenu.style.display = 'flex';
+        }
+    });
+
+    sideMenu.addEventListener('animationend', function(event) {
+        if (event.animationName === 'slideOut') {
+            sideMenu.style.display = 'none';
+        }
     });
 
     document.addEventListener("click", function(event) {
         if (!sideMenu.contains(event.target) && !mobileNavToggle.contains(event.target)) {
-            sideMenu.classList.remove("open");
+            if (sideMenu.classList.contains('open')) {
+                sideMenu.classList.remove('open');
+                sideMenu.classList.add('close');
+            }
         }
     });
 });
