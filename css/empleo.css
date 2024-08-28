@@ -41,9 +41,9 @@
 
 
 body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
     transition: left 0.3s ease;
     font-family: "Rubik", sans-serif;
     margin: 0;
@@ -165,9 +165,9 @@ a.enlace.empresa:hover {
     left: -250px; 
     width: 250px;
     height: 100%;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
     transition: left 0.3s ease;
     z-index: 1000;
     display: none; 
@@ -222,9 +222,9 @@ a.enlace.empresa:hover {
     align-items: center; 
     min-height: 100vh; 
     padding: 50px 20px; 
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30);    
 }
 
 .container-trabaja_con_nosotros {
@@ -234,7 +234,7 @@ a.enlace.empresa:hover {
     justify-content: center;
     max-width: 1200px; 
     margin: 0 auto;
-    text-align: center; /* Centrar el texto dentro del contenedor */
+    text-align: center;
 }
 
 .imagen-quienes-somos {
@@ -251,17 +251,17 @@ a.enlace.empresa:hover {
 }
 
 .texto-trabaja_con_nosotros h2 {
-    font-size: 48px; /* Aumentar el tamaño del encabezado */
+    font-size: 48px; 
     margin-bottom: 20px; 
-    text-align: center; /* Centrar el encabezado */
-    color: white; /* Color del texto */
+    text-align: center; 
+    color: white; 
 }
 
 .texto-trabaja_con_nosotros p {
     font-size: 19px; 
     line-height: 1.6; 
-    text-align: center; /* Centrar el texto de los párrafos */
-    color: white; /* Color del texto */
+    text-align: center; 
+    color: white; 
 }
 
 .btn {
@@ -283,9 +283,9 @@ a.enlace.empresa:hover {
 }
 
 footer {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
     padding: 24px 20px; 
     text-align: center;
     color: white;
@@ -381,12 +381,12 @@ footer .footer-content a:hover {
         cursor: pointer; 
     }
     .logo {
-        top: 24px; /* Ajusta la posición vertical del logo para móviles */
-        left: 1px; /* Mueve el logo más a la izquierda para móviles */
+        top: 24px;
+        left: 1px; 
     }
 
     .logo-empresa {
-        max-width: 150px; /* Reduce el tamaño máximo del logo para móviles */
+        max-width: 150px; 
     }
 
     .trabaja_con_nosotros {
