@@ -30,9 +30,9 @@
 }
 
 body {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30); 
     transition: left 0.3s ease;
     font-family: "Rubik", sans-serif;
     margin: 0;
@@ -154,9 +154,9 @@ a.enlace.empresa:hover {
     left: -250px; 
     width: 250px;
     height: 100%;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30); 
     transition: left 0.3s ease;
     z-index: 1000;
     display: none; 
@@ -308,9 +308,9 @@ a.enlace.empresa:hover {
 
 .nuestros-empleados {
     padding: 50px 0;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30); 
     color: white;
 }
 
@@ -361,9 +361,9 @@ a.enlace.empresa:hover {
 }
 
 footer {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30); 
     padding: 40px 20px; 
     text-align: center;
     color: white;
@@ -434,12 +434,12 @@ footer .footer-content a:hover {
     }
 
     .logo {
-        top: 20px; /* Ajusta la posición vertical del logo para móviles */
-        left: 1px; /* Mueve el logo más a la izquierda para móviles */
+        top: 20px; 
+        left: 1px;
     }
 
     .logo-empresa {
-        max-width: 150px; /* Reduce el tamaño máximo del logo para móviles */
+        max-width: 150px; 
     }
 
     .navbar ul {
