@@ -43,16 +43,16 @@ body {
     font-family: "Rubik", sans-serif;
     margin: 0;
     padding: 0;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
     color: white;
 }
 
 header {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30);
     padding: 20px;
     display: flex; 
     justify-content: space-between;
@@ -165,9 +165,9 @@ a.enlace.empresa:hover {
     left: -250px; 
     width: 250px;
     height: 100%;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
     transition: left 0.3s ease;
     z-index: 1000;
     display: none; 
@@ -235,9 +235,9 @@ a.enlace.empresa:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 340px;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30); 
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -297,9 +297,9 @@ input::placeholder, textarea::placeholder {
     padding: 30px;
 }
 footer {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #141E30;  
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30);    
     padding: 40px 20px; 
     text-align: center;
     color: white;
@@ -369,12 +369,12 @@ footer .footer-content a:hover {
         }
 
         .logo {
-            top: 20px; /* Ajusta la posición vertical del logo para móviles */
-            left: 1px; /* Mueve el logo más a la izquierda para móviles */
+            top: 20px;
+            left: 1px; 
         }
     
         .logo-empresa {
-            max-width: 150px; /* Reduce el tamaño máximo del logo para móviles */
+            max-width: 150px;
         }
     
         .navbar ul {
