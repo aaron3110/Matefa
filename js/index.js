@@ -37,7 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
     showNextGroup();
     setInterval(showNextGroup, 7000);
 });
-
+document.addEventListener('DOMContentLoaded', function() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+});
 document.addEventListener("DOMContentLoaded", function() {
     const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
     const sideMenu = document.querySelector(".side-menu");
@@ -49,16 +55,15 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             sideMenu.classList.remove('close');
             sideMenu.classList.add('open');
-            sideMenu.style.display = 'flex';
+            sideMenu.style.display = 'flex'; // Asegúrate de que el menú sea visible al abrir
         }
     });
 
     sideMenu.addEventListener('animationend', function(event) {
         if (event.animationName === 'slideOut') {
-            sideMenu.style.display = 'none';
+            sideMenu.style.display = 'none'; // Oculta el menú después de la animación de cierre
         }
     });
-
     document.addEventListener("click", function(event) {
         if (!sideMenu.contains(event.target) && !mobileNavToggle.contains(event.target)) {
             if (sideMenu.classList.contains('open')) {
@@ -67,5 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
+    document.addEventListener('DOMContentLoaded', function() {
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        }
+    });
 });
-
