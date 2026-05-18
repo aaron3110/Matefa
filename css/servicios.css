@@ -380,6 +380,10 @@ a.enlace.empresa:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     display: block;
 }
+
+.imagen-vehiculo-frente {
+    height: 400px;
+}
 .imagen-empleado img,
 .imagen-vehiculo img {
     width: 100%;
