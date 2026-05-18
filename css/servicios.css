@@ -317,6 +317,8 @@ a.enlace.empresa:hover {
 .nuestros-empleados .contenedor {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .nuestros-empleados .titulo {
@@ -359,6 +361,8 @@ a.enlace.empresa:hover {
     font-size: 36px;
     margin: 50px 0;
     color: darkgoldenrod;
+    clear: both;
+    display: block;
 }
 
 .imagen-empleado {
@@ -376,6 +380,7 @@ a.enlace.empresa:hover {
     border-radius: 25px;
     border: 3px solid darkgoldenrod;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: block;
 }
 .imagen-empleado img,
 .imagen-vehiculo img {
